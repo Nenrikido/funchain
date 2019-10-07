@@ -7,19 +7,21 @@ _func_types = [FunctionType, LambdaType, MethodType, BuiltinFunctionType, Builti
 
 
 def _pipe(self, func):
-    if func == print:
-        func(self() if callable(self) else self)
-    else:
-        def wrapper(*args, **kwargs):
-            """Wrapper for the function combination"""
-            res = self(*args, **kwargs) if callable(self) else self
-            if len(signature(func).parameters) > 1:
+    def wrapper(*args, **kwargs):
+        """Wrapper for the function combination"""
+        res = self(*args, **kwargs) if callable(self) else self
+        try:
+            if func == print or len(signature(func).parameters) > 1:
                 if isinstance(res, dict):
                     return func(**res)
                 if isinstance(res, Iterable):
                     return func(*res)
-            return func(res)
-
+        except:
+            pass
+        return func(res)
+    if func == print:
+        wrapper()
+    else:
         return wrapper
 
 
