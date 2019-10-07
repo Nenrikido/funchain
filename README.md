@@ -1,2 +1,2 @@
-"# pipeoperator.py" 
-"# pipeoperator.py" 
+# pipeoperatory.py
+Adding a pipe-line function execution operator to python
