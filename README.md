@@ -1,7 +1,14 @@
 # pipeoperatory.py
 Adding a pipe-line function execution operator to python
 
-- Example usages : 
+## Requirements :
+[forbiddenfruit](https://github.com/clarete/forbiddenfruit)
+
+You can install it using :
+
+`pip install forbiddenfruit`
+
+## Example usages : 
 ```py
 import pipeoperator
 
