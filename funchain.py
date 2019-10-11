@@ -27,3 +27,7 @@ def _pipe(self, func):
 
 for t in _func_types:
     curse(t, "__or__", _pipe)
+curse(float, "abs", lambda self: abs(self))
+curse(Iterable, "all", lambda self: abs(self))
+
+print([True, True].all())
