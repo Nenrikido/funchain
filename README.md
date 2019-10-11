@@ -3,7 +3,7 @@ Adding functions and methods chaining facilities to Python :
 
 ### Pipe operator :
 ```py
-import pipeoperator
+import funchain
 
 def double(x):
     return 2 * x
