@@ -29,4 +29,4 @@ You can install it using :
 
 `pip install forbiddenfruit`
 
-(Please note that, as stated in their documentation, it is tested to work until version 3.3, but I developped this on version 3.7 where it works well, if you have some issues please report them to me and i will add informations here, also I didn't test it on other implementation than CPython, where it may or may not work, again, please report problems.)
+(Please note that, as stated in their documentation, it is tested to work until version 3.7, it's also the version I tested this code on and the version I recommend you to use it on, if you have some issues please report them to me and i will add informations here, also as they say, it won't work on other python implementations than CPython, so please be aware of that)
